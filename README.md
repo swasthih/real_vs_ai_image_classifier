@@ -8,9 +8,6 @@ CIFAKE on Kaggle
 
 How It Works
 Images are preprocessed (resized, normalized, and converted to tensors).
-
 The trained CNN model classifies the image into Real or AI-generated.
-
 The Flask backend processes image uploads and sends predictions to the frontend.
-
 The result is displayed on a clean, responsive web interface.
