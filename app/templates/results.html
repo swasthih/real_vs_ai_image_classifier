@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Prediction: 
+            <span style="color: {{ 'green' if prediction == 'REAL' else 'red' }}">{{ prediction }}</span>
+        </h2>
+        <img src="{{ url_for('static', filename=image_url) }}" width="300"
+             style="margin-top: 20px; border: 3px solid {{ 'green' if prediction == 'REAL' else 'red' }}; border-radius: 12px;">
+        <br><br>
+        <a href="{{ url_for('index') }}">
+            <button style="background-color: #444;">Classify Another</button>
+        </a>
+    </div>
+</body>
+</html>
